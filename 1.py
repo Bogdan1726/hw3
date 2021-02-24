@@ -1,4 +1,4 @@
-""""#1. Define the id of next variables:
+#1. Define the id of next variables:
 int_a = 55
 str_b = 'cursor'
 set_c = {1, 2, 3}
@@ -113,6 +113,17 @@ def my_add(a, b):
 reduce(my_add, lst_to_sort)
 
 #25. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
-print(list(filter(lambda elem: (elem % 2 == 1), lst_to_sort)))"""
+print(list(filter(lambda elem: (elem % 2 == 1), lst_to_sort)))
 
 #26. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
+b = range(-10, 10)
+print(list(filter(lambda x: x < 0, b)))
+
+#27*. Using the filter function, find the values that are common to the two lists:
+list_1 = [1, 2, 3, 5, 7, 9]
+list_2 = [2, 3, 5, 6, 7, 8]
+
+print(list(filter(lambda x: x in list_2, list_1)))
+
+
+
