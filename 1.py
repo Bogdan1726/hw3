@@ -102,15 +102,7 @@ print(list(map(lambda a, b: a + b, list_A, list_B)))
 
 #24. Use reduce and lambda to compute the numbers of a lst_to_sort.
 from functools import reduce
-
-
-def my_add(a, b):
-    result = a + b
-    print(f"{a} + {b} = {result}")
-    return result
-
-
-reduce(my_add, lst_to_sort)
+print(reduce(lambda x, y: x + y, lst_to_sort))
 
 #25. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
 print(list(filter(lambda elem: (elem % 2 == 1), lst_to_sort)))
